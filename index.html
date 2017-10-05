@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Company Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+<div class="container">
+    <aside class="leftSideBar">
+        <p id="line"></p>
+        <img class="icons" src="Icons/ic_dashboard_white_48dp_1x.png">
+        <p class="iconDescription">DASHBOARD</p>
+        <img class="icons" src="Icons/ic_person_white_48dp_1x.png">
+        <p class="iconDescription">VENDOR</p>
+        <img class="icons" src="Icons/ic_description_white_48dp_1x.png">
+        <p class="iconDescription">PURCHASE</p>
+    </aside>
+
+    <header>
+        <p id="settings">SETTINGS</p>
+    </header>
+    <nav style="position: relative">
+        <span class="navContent">My Company</span>
+        <span class="navContent" id="messages" onclick="slide()">Messages</span>
+        <img id="menuIcon" src="Icons/ic_menu_white_24dp_1x.png">
+    </nav>
+
+    <main>
+        <div class="sectionContainer">
+            <section>
+                <div class="title">
+                    Notifications
+                </div>
+
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+
+
+                <div class="mainText">
+                    How many days do you want to pass by before a notification is sent?
+                </div>
+                <input id="notifications" type="number" placeholder="2">
+            </section>
+            <section>
+                <div class="title">
+                    Emails
+                </div>
+                <div class="mainText">
+                    Set the default emails.
+                </div>
+                <label>Shipping:</label>
+                <input class="emails" type="text">
+                <label>Billing:</label>
+                <input class="emails" type="text">
+                <label>Another Email:</label>
+                <input class="emails" type="text">
+            </section>
+            <section>
+                <div class="title">
+                    Text Messages
+                </div>
+                <div class="mainText">
+                    Enter your cell phone number to recieve texts from loop minded.
+                </div>
+                <label>Cell Number:</label>
+                <input id="textMessageInput" type="text">
+            </section>
+        </div> <!-- End sectionContainer -->
+    </main>
+</div>
+
+
+<div id="slideBlock">
+    <div id="newConversation">
+        <img id="arrowSlider" src="Icons/ic_arrow_back_white_18dp_1x.png">
+        <span id="conversationText">New Conversation</span>
+        <div onclick="CloseSlider()">
+        <img id="closeSlider" src="Icons/ic_close_white_18dp_1x.png">
+        </div>
+    </div>
+    <div id="tools">
+        <i id="addIcon" class="material-icons">add</i>
+        <span id="numberSymbol">#</span>
+    </div>
+    <div id="sliderMainContent"></div>
+    <div id="sliderFooter">
+        <div id="options">
+            <span class="optionsText">Conversation</span>
+            <span class="optionsText">Files</span>
+            <span class="optionsText">Logs</span>
+        </div>
+        <div id="inputBox">
+            <input id="inputBoxSlider" type="text">
+            <img id="rightArrow" src="Icons/ic_navigation_white_18dp_1x_edited.png">
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

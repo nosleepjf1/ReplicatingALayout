@@ -1,0 +1,306 @@
+html, body {
+    margin: 0 auto;
+    box-sizing: border-box;
+    background: #f2f4f4;
+}
+
+
+.container{
+    min-width: 1200px;
+    width: 100%;
+}
+
+.leftSideBar{
+    width: 10%;
+    height: 100vh;
+    float: left;
+    background: #41C9A9; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#41C9A9, #31977F,#34A7C1); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#41C9A9, #31977F,#34A7C1); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#41C9A9, #31977F,#34A7C1); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#41C9A9, #31977F,#34A7C1); /* Standard syntax */
+   }
+
+#line {
+    border-bottom: white solid 2px;
+    margin: 110px 0 30px 0;
+}
+
+.icons {
+    display: block;
+    margin: 30px auto 0 auto;
+}
+
+.iconDescription {
+    margin: 0;
+    text-align: center;
+}
+
+header{
+    width: 65%;
+    background: grey;
+    float: left;
+    background: #b0c3be; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, #b6c1bf, #929997); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left, #b6c1bf, #929997); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left, #b6c1bf, #929997); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #b6c1bf, #929997); /* Standard syntax */
+}
+
+nav{
+    width: 25%;
+    background: #41C9A9;
+    float: left;
+    position: relative;
+}
+
+.navContent {
+    font-size: .75em;
+    display: inline-block;
+    width: calc(30% - 20px);
+    margin: 17px 10px 16px 30px;
+}
+
+#menuIcon {
+    text-align: right;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+#messages {
+    text-align: center;
+    cursor: pointer;
+}
+
+main {
+    width: calc(90% - 40px);
+    height: 85vh;
+    margin: 20px;
+    box-shadow: #626262 0px 0px 8px;
+    background: white;
+    float: right;
+}
+
+section {
+    margin-left: 10%;
+    margin-top: 50px;
+    width: 30%;
+}
+
+.iconDescription, header, nav {
+    color: white;
+}
+
+#settings {
+    font-size: 2em;
+    margin: 5px 0 5px 20px;
+}
+
+.title {
+    color: #41C9A9;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.mainText {
+    margin-bottom: 30px;
+    font-size: 1.1em;
+}
+
+#notifications {
+    border: 0px solid;
+    border-bottom: 1px solid black;
+    width: 50px;
+}
+
+.emails {
+    display: block;
+    border: 0px solid;
+    border-bottom: 1px solid black;
+    width: 95%;
+    margin-bottom: 20px;
+}
+
+#textMessageInput {
+    display: block;
+    border: 0px solid;
+    border-bottom: 1px solid black;
+    width: 95%;
+}
+
+
+
+
+
+
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    float: right;
+    margin-top: -55px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    left: 0px;
+    bottom: 0px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #41C9A9;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #41C9A9;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    transform: translateX(30px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+#slideBlock {
+    display: none;
+    position: absolute;
+    top: 46px;
+    left: 100%;
+    height: calc(100vh - 48px);
+    width: calc(25% - 2px);
+    background: #81a9A9;
+    border: #dcdede 1px solid;
+
+}
+
+#newConversation {
+    position: relative;
+    background: #41C9A9;
+    height: 5.5%;
+    text-align: center;
+    color: white;
+}
+
+
+
+#conversationText {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+#arrowSlider {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+
+#closeSlider {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+}
+
+#addIcon {
+    position: absolute;
+    left: 13px;
+    top: 9px;
+    color: #41C9A9;
+}
+
+#numberSymbol {
+    position: absolute;
+    right: 19px;
+    top: 10px;
+    font-size: 1.2em;
+    color: #41C9A9;
+}
+
+#tools {
+    position: relative;
+    background: #f2f4f4;
+    height: 4.5%;
+}
+
+#sliderMainContent {
+    background: white;
+    height: 73%;
+}
+
+#sliderFooter {
+    position: relative;
+    background: #34A7C1;
+    height: 17%;
+}
+
+#options {
+    color: white;
+    text-align: center;
+}
+
+.optionsText {
+    font-size: .9em;
+    display: inline-block;
+    margin: 10px 20px 10px 0;
+}
+
+#inputBoxSlider {
+    width: 90%;
+    margin-left: 5%;
+    height: 20px;
+}
+
+#rightArrow {
+    position: absolute;
+    top: 42px;
+    right: 21px;
+}
+
+.slideAnimation {
+    -webkit-animation-name: slideIn; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-name: slideIn;
+    animation-duration: 1s;
+}
+
+
+@keyframes slideIn {
+    from {left: 100%;}
+    to {left: 75%;}
+}
