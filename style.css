@@ -2,15 +2,19 @@ html, body {
     margin: 0 auto;
     box-sizing: border-box;
     background: #f2f4f4;
+    min-width: 1200px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
 }
 
 
 .container{
-    min-width: 1200px;
+    min-width: 1250px;
     width: 100%;
 }
 
 .leftSideBar{
+    font-family: 'Roboto', sans-serif;
     width: 10%;
     height: 100vh;
     float: left;
@@ -32,22 +36,25 @@ html, body {
 }
 
 .iconDescription {
-    margin: 0;
+    font-size: .8em;
+    margin: 3px 0 0 0;
     text-align: center;
 }
 
 header{
+    font-family: 'Roboto', sans-serif;
     width: 65%;
     background: grey;
     float: left;
     background: #b0c3be; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(left, #b6c1bf, #929997); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(left, #b6c1bf, #929997); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(left, #b6c1bf, #929997); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to right, #b6c1bf, #929997); /* Standard syntax */
+    background: -webkit-linear-gradient(left, #b3bebc, #929997); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left, #b3bebc, #929997); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left, #b3bebc, #929997); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #b3bebc, #929997); /* Standard syntax */
 }
 
 nav{
+    font-family: 'Roboto', sans-serif;
     width: 25%;
     background: #41C9A9;
     float: left;
@@ -58,7 +65,7 @@ nav{
     font-size: .75em;
     display: inline-block;
     width: calc(30% - 20px);
-    margin: 17px 10px 16px 30px;
+    margin: 17px 10px 17px 30px;
 }
 
 #menuIcon {
@@ -80,6 +87,8 @@ main {
     box-shadow: #626262 0px 0px 8px;
     background: white;
     float: right;
+    font-weight: 100;
+    color: #727272;
 }
 
 section {
@@ -93,19 +102,23 @@ section {
 }
 
 #settings {
-    font-size: 2em;
-    margin: 5px 0 5px 20px;
+    font-size: 1.5em;
+    margin: 10px 0 10px 30px;
+    letter-spacing: 2px;
 }
 
 .title {
     color: #41C9A9;
     font-size: 1.5em;
     margin-bottom: 30px;
+    font-weight: 800;
 }
 
 .mainText {
     margin-bottom: 30px;
     font-size: 1.1em;
+    font-weight: 100;
+    color: #727272;
 }
 
 #notifications {
@@ -156,7 +169,7 @@ section {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: #41C9A9;
     -webkit-transition: .4s;
     transition: .4s;
 }
@@ -166,7 +179,7 @@ section {
     content: "";
     height: 30px;
     width: 30px;
-    left: 0px;
+    left: 30px;
     bottom: 0px;
     background-color: white;
     -webkit-transition: .4s;
@@ -174,7 +187,7 @@ section {
 }
 
 input:checked + .slider {
-    background-color: #41C9A9;
+    background-color: lightgrey;
 }
 
 input:focus + .slider {
@@ -182,9 +195,9 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-    -webkit-transform: translateX(30px);
-    -ms-transform: translateX(30px);
-    transform: translateX(30px);
+    -webkit-transform: translateX(-30px);
+    -ms-transform: translateX(-30px);
+    transform: translateX(-30px);
 }
 
 /* Rounded sliders */
@@ -199,14 +212,13 @@ input:checked + .slider:before {
 
 #slideBlock {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 46px;
     left: 100%;
     height: calc(100vh - 48px);
     width: calc(25% - 2px);
     background: #81a9A9;
     border: #dcdede 1px solid;
-
 }
 
 #newConversation {
@@ -222,6 +234,7 @@ input:checked + .slider:before {
 #conversationText {
     display: inline-block;
     margin-top: 15px;
+    font-weight: 100;
 }
 
 #arrowSlider {
@@ -278,6 +291,7 @@ input:checked + .slider:before {
     font-size: .9em;
     display: inline-block;
     margin: 10px 20px 10px 0;
+    font-weight: 100;
 }
 
 #inputBoxSlider {
